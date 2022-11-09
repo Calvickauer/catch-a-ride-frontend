@@ -61,8 +61,7 @@ const Profile = (props) => {
        <p>ID: {id}</p>
        <div>
 
-        { <MessageForm userId={id}/> }
-        {/* { <Messages user={id} /> } */}
+
         <Vehicles user={id}/>
 
 
