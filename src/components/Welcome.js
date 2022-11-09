@@ -170,11 +170,12 @@ export class MapContainer extends Component {
               lng: this.state.mapCenter.lng
             }} />
         </Map>
-        <JourneyOrRideForm></JourneyOrRideForm>
+        <br />
       </div>
         </div>
 
       </div>
+  
       
     )
   }

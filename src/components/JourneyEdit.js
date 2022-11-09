@@ -30,6 +30,7 @@ const JourneyEdit = () => {
         };
         fetchJourney();
         console.log(journey);
+        console.log(passengerUids);
     }, []);
 
     const handleChange = (e) => {
@@ -58,12 +59,13 @@ const JourneyEdit = () => {
 
     const removePassenger = (e) => {
         e.preventDefault();
-        const pId = e.target.getAttribute('pId');
+        const pass = e.target.getAttribute('pId');
+        console.log(pass);
         setPassengerUids(current => 
             current.filter(passengerUid => {
-                return passengerUid._id !== pId;
+                return passengerUid._id !== pass;
             }))
-        axios.delete(`${REACT_APP_SERVER_URL}/journeys/${id}/passengers/remove`, pId)
+        axios.delete(`${REACT_APP_SERVER_URL}/journeys/${id}/passengers/${pass}/remove`)
             .catch(error => console.log('===> Error in remove passengers', error));
     };
 
@@ -71,6 +73,7 @@ const JourneyEdit = () => {
         console.log(passenger);
         return (
             <li key={idx}>{passenger.firstName} {passenger.lastName} <button pId={passenger._id} onClick={removePassenger}>Remove</button></li>
+            // <li key={idx}>{passenger.firstName} {passenger.lastName} <button name='pId' value={passenger._id} onClick={removePassenger}>Remove</button></li>
         )
     })
 
