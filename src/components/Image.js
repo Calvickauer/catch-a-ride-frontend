@@ -18,6 +18,14 @@ const Images = () => {
     }).then(res => {
         console.log(res)
     })
+
+       
+    };
+    reader.readAsDataURL(file);
+
+
+  
+
  } 
 
  const handleFileChange = (e) => {
