@@ -5,21 +5,14 @@ import MessageForm from './MessageForm';
 import Messages from './Messages';
 import Vehicles from './Vehicles';
 import axios from 'axios';
+import setAuthToken from '../utils/setAuthToken';
+import Images from './Image';
+import ImageContainer from './ImageContainer';
 
 const {REACT_APP_SERVER_URL} = process.env
 
-const Profile = (props) => {
-   const { handleLogout, user } = props;
-   const { id, firstName, lastName, birthdate, email, exp } = user;
-   const expirationTime = new Date(exp * 1000);
-   let currentTime = Date.now();
 
-import axios from 'axios';
-import setAuthToken from '../utils/setAuthToken';
-import Messages from './Messages';
-import Images from './Image';
-import ImageContainer from './ImageContainer';
-const { REACT_APP_SERVER_URL } = process.env;
+
 
 
 const Profile = (props) => {
@@ -65,7 +58,7 @@ const Profile = (props) => {
        <div>
 
         { <MessageForm userId={id}/> }
-        { <Messages user={id} /> }
+        {/* { <Messages user={id} /> } */}
         <Vehicles user={id}/>
 
 
@@ -94,5 +87,6 @@ const Profile = (props) => {
     );
 
 }
+
 
 export default Profile;
