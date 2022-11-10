@@ -84,7 +84,7 @@ function Vehicles(props) {
         window.location.reload(false);
     };
 
-
+    
     
 
     const vehicleBoard = vehicle.map((v, idx) => {
