@@ -71,6 +71,20 @@ function Vehicles(props) {
     // console.log(vehicle[0])
     console.log(vehicle);
     
+    const removeVehicle = (e) => {
+        e.preventDefault();
+        const pass = e.target.getAttribute('vId');
+        console.log(pass);
+        setVehicle(current => 
+            current.filter(vehicleId => {
+                return vehicleId._id !== pass;
+            }))
+        axios.delete(`${REACT_APP_SERVER_URL}/vehicles/${pass}/remove`)
+            .catch(error => console.log('===> Error in remove passengers', error));
+        window.location.reload(false);
+    };
+
+
     
 
     const vehicleBoard = vehicle.map((v, idx) => {
@@ -92,6 +106,7 @@ function Vehicles(props) {
                 <div className='side-by-side'>
                     <ShowVehicle vehicle={v}/>
                     <button type='button' id='edit-vehicle-button' className='glow-on-hover' onClick={() => handleClick(v._id)}>Edit Vehicle</button>
+                    <button type='button' vId={v._id} id='edit-vehicle-button' className='glow-on-hover' onClick={removeVehicle}>Delete</button>
                 </div>
                 <br />
                 <br />
