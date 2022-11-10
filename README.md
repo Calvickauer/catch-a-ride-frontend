@@ -5,7 +5,7 @@ Catch-A-Ride is an American online marketplace for carpooling. Our website conne
 
 # Catch A Ride App
 
-Visit Catch A Ride app website at: []
+Visit Catch A Ride app website at: <a href=""> Catch-A-Ride</a>
 <hr />
 
 ## Getting Started
@@ -36,9 +36,9 @@ npm install
 
 <hr />
 
-## ERD
+## WireFrame
+<img width="1239" alt="WireFrameP3" src="https://user-images.githubusercontent.com/106926062/200982556-15df1df5-28ba-486d-a072-e06e6c6a1c24.png">
 
-![ERD]()
 
 <hr />
 
@@ -48,46 +48,77 @@ npm install
 
 <hr />
 
-## Wireframes
+## App Pictures
 
-* Home page of the app
+* Map Search / Home Page
+<img width="782" alt="Screen Shot 2022-11-09 at 4 16 59 PM" src="https://user-images.githubusercontent.com/106926062/200979586-805639cc-d3fb-46e0-8c07-c484d3b1f4e6.png">
 
+<br/>
 
+* Profile Page
+<img width="969" alt="Screen Shot 2022-11-09 at 4 09 33 PM" src="https://user-images.githubusercontent.com/106926062/200979557-bbc75088-00eb-4052-80be-a969dcba3ee9.png">
 
-* journey form page
+<br/>
 
+* Add vehicle
+<img width="969" alt="Screen Shot 2022-11-09 at 4 13 00 PM" src="https://user-images.githubusercontent.com/106926062/200979564-5085bbc5-3e5a-4105-8a30-2f07d9dc3f67.png">
 
+<br/>
 
-* About page of the app
+* journey Form page
+<img width="797" alt="Screen Shot 2022-11-09 at 4 13 24 PM" src="https://user-images.githubusercontent.com/106926062/200979572-12beaf64-fe93-4169-9487-ee2166538507.png">
+
+<br/>
+
+* Request Form page
+<img width="797" alt="Screen Shot 2022-11-09 at 4 13 29 PM" src="https://user-images.githubusercontent.com/106926062/200979575-312db5c5-de82-4b3b-8a6c-7bfb00395c7b.png">
+
+<br/>
+
+* Journey Details page
+<img width="797" alt="Screen Shot 2022-11-09 at 4 16 39 PM" src="https://user-images.githubusercontent.com/106926062/200979579-cf23dba7-02f2-4c0a-bcc1-e7386505242f.png">
+
+<br/>
 
 
 
 <hr />
 
-## Credits
+## API's used
 
 * Third party API: 
-
+<br/>
+<a href="https://suite.imagin.studio/?&customer=usalejandromorenocompany&make=abarth&modelFamily=124-spider&modelRange=124-spider&modelVariant=ca&modelYear=2018&powerTrain=fossil&transmission=0&bodySize=2&trim=0&paintId=imagin-grey">Vehicle Api</a>
+<br/>
+<a href="https://developers.google.com/maps/apis-by-platform">Google Maps Api</a>
 
 ## Developers 
 
 <div align="center">
+ <h3> David Escotto </h3>
+    <a href="https://github.com/Descotto">
+    <img src="https://i.imgur.com/Crnv0HA.jpg"
+      alt="Contributors"
+      width="15%" target="_blank"/> 
+  </a>
+   <h3> Keara Harrington </h3>
+    <a href="https://github.com/kearaharrington">
+    <img src="https://i.imgur.com/JVs443j.jpg"
+      alt="Contributors"
+      width="15%" target="_blank"/>
+  </a>
+   <h3> Calvin Moldenhauer </h3>
   <a href="https://github.com/Calvickauer">
+    <img src="https://i.imgur.com/ZLZ3EaT.jpg"
       alt="Contributors"
       width="15%" target="_blank"/>
     </a>
-    <a href="https://github.com/kearaharrington">
-      alt="Contributors"
-      width="15%" target="_blank"/>
   </a>
-  </a>
+    <h3> Alejandro Moreno </h3>
     <a href="https://github.com/amoreno16003">
+    <img src="https://i.imgur.com/83FhrYR.jpg"
       alt="Contributors"
       width="15%" target="_blank"/>
-  </a>
-    <a href="https://github.com/Descotto">
-      alt="Contributors"
-      width="15%" target="_blank"/> 
   </a>
 </div>
 
