@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = (props) => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark">
             <div className="container">
                 <Link className="navbar-brand" to="/">Catch-A-Ride</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="#navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +20,9 @@ const Navbar = (props) => {
                         <li className="nav-item">
                              <NavLink className="nav-link"  to="/profile">Profile</NavLink>
                         </li>
+                        <li className="nav-item">
+                             <NavLink className="nav-link"  to="/journeys/all">All Journeys</NavLink>
+                        </li>
                     </ul>
                     {
                         props.isAuth 
@@ -31,7 +34,7 @@ const Navbar = (props) => {
                                 <NavLink className="nav-link"  to="/journeys/new">New Journey</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link"  to="/messages/user/635af2d66103bc41965b2160">Inbox</NavLink>
+                                <NavLink className="nav-link"  to="/messages/inbox">Inbox</NavLink>
                             </li>
                             <li>
                             <NavLink className="nav-link"  to="/vehicle">Add Vehicle</NavLink>

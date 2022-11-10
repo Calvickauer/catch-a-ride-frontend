@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import {Buffer} from 'buffer';
 import { Redirect, useHistory } from 'react-router-dom';
-const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
+import {Buffer} from 'buffer';
+const { REACT_APP_SERVER_URL } = process.env;
 
 
-const ImageContainer = (props) => {
+
+const ProfilePic = (props) => {
     const[img, setImg] = useState('');
     const[photoId, setPhotoId] = useState(props.photoId)
     console.log('photos ID before', props.photoId)
 useEffect(() => {
     console.log('photos ID', props.photoId)
-    console.log(localStorage.getItem('photoId'))
-    axios.get(`${REACT_APP_SERVER_URL}/images/show/${localStorage.getItem('photoId')}`)
+axios.get(`${REACT_APP_SERVER_URL}/images/show/${localStorage.getItem('pictureId')}`)
         .then(res => {
-
-            console.log('RES>DATA', res.data);
-
             setImg(Buffer.from(res.data.image, 'base64').toString('base64'));
         }).catch(err => {
             console.log(err);
@@ -25,11 +22,11 @@ useEffect(() => {
 
    
 return (
-    <div className='image-container'>
+    <div>
         <img src={`data:image/jpeg;base64,${img}`} />
     </div>
 )
 }
 
 
-export default ImageContainer;
+export default ProfilePic;

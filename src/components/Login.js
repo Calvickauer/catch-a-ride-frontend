@@ -5,7 +5,7 @@ import jwt_decode from 'jwt-decode';
 import { Redirect } from 'react-router-dom';
 import setAuthToken from '../utils/setAuthToken';
 
-const { REACT_APP_SERVER_URL } = process.env;
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 const Login = (props) => {
     const [email, setEmail] = useState('');
@@ -46,7 +46,7 @@ const Login = (props) => {
     return (
         <div className="row mt-4">
             <div className="col-md-7 offset-md-3">
-                <div className="card card-body">
+                <div className="card card-body login">
                     <h2 className="py-2">Login</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">

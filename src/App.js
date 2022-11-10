@@ -19,12 +19,12 @@ import Vehicle from './components/VehicleForm';
 import JourneyOrRideForm from './components/JourneyOrRideReq';
 import JourneyDetails from './components/JourneyDetails';
 import Message from './components/MessageForm';
-// import AllMessages from './components/AllMessages';
 import VehicleEdit from './components/VehicleEdit';
 import JourneyEdit from './components/JourneyEdit';
 import Inbox from './components/Inbox';
 import ProfileEdit from './components/ProfileEdit';
 import Notfound from './components/404';
+import JourneyResults from './components/JourneyResults';
 
 const PrivateRoute = ({ component: Component, ...rest}) => {
   let token = localStorage.getItem('jwtToken');
@@ -79,6 +79,8 @@ function App() {
             path="/login"
             render={(props) => <Login {...props} nowCurrentUser={nowCurrentUser} setIsAuthenticated={setIsAuthenticated} user={currentUser}/>}
           />
+          <Route path='/journeys/all' component={JourneyResults} />
+
           <PrivateRoute path="/profile" component={Profile} user={currentUser} handleLogout={handleLogout} />
 
           <PrivateRoute path="/visit/:idx" component={VisitProfile} oguser={currentUser} handleLogout={handleLogout} />
@@ -87,7 +89,7 @@ function App() {
           <PrivateRoute path="/journeys/new" component={JourneyOrRideForm} user={currentUser}  />
           <PrivateRoute path="/journeys/show/:id" component={JourneyDetails} user={currentUser}  />
           <PrivateRoute path="/journeys/edit/:id" component={JourneyEdit} user={currentUser}  />
-          <PrivateRoute path="/messages/user/635af2d66103bc41965b2160" component={Inbox} user={currentUser}  />
+          <PrivateRoute path="/messages/inbox" component={Inbox} user={currentUser}  />
           <PrivateRoute path="/messages/new" component={Message} user={currentUser}  />
           <PrivateRoute path="/vehicles/edit/:id" component={VehicleEdit} user={currentUser}/>   
           {/* <Route exact path="/messages" component={AllMessages} user={currentUser} /> */}

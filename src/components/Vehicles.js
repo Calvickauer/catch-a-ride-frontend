@@ -4,7 +4,7 @@ import setAuthToken from '../utils/setAuthToken';
 import ShowVehicle from './ShowVehicle';
 import '../css/Vehicle.css'
 import { Link, Redirect, useHistory } from 'react-router-dom';
-const { REACT_APP_SERVER_URL } = process.env;
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 const { REACT_APP_API_KEY } = process.env;
 
     

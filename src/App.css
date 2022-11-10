@@ -19,6 +19,17 @@ body {
 
 .signup{
   background-color: rgba(20, 32, 100, 0.5);
+  color: white;
+}
+
+.login{
+  background-color: rgba(20, 32, 100, 0.5);
+  color: white;
+}
+
+.navbar-dark {
+  background-color: rgb(0, 0, 0);
+  
 }
 
 /* .GoogleMaps{
@@ -38,20 +49,60 @@ body {
 
 .journey-size{
   margin: auto;
-  max-width: 500px;
+  max-width: 800px;
   max-height: 500px;
+}
+.journey-body{
+  background-color: rgba(83, 20, 100, 0.7);
+  color: white;
+  box-shadow: -7px 8px 18px 4px rgba(23,19,194,0.75);
+  -webkit-box-shadow: -7px 8px 18px 4px rgba(23,19,194,0.75);
+  -moz-box-shadow: -7px 8px 18px 4px rgba(23,19,194,0.75);
 }
 
 .request-size{
   margin: auto;
-  max-width: 500px;
+  max-width: 800px;
   max-height: 500px;
+}
+.request-body{
+  background-color: rgba(20, 32, 100, 0.7);
+  color: white;
+  box-shadow: 8px 8px 18px 4px rgba(149,19,194,0.75);
+  -webkit-box-shadow: 8px 8px 18px 4px rgba(149,19,194,0.75);
+  -moz-box-shadow: 8px 8px 18px 4px rgba(149,19,194,0.75);
+}
+
+.vehicle-body{
+  background-color: rgba(20, 32, 100, 0.7);
+  color: white;
+  box-shadow: -1px 8px 50px 10px rgba(4,0,255,0.75);
+-webkit-box-shadow: -1px 8px 50px 10px rgba(4,0,255,0.75);
+-moz-box-shadow: -1px 8px 50px 10px rgba(4,0,255,0.75);
 }
 
 .profile-card {
-  background-color: rgb(253, 253, 253);
-  border-radius: 40%;
+  color: white;
+  border-radius: 40%; 
   
+}
+
+.journey-details{
+  color: white;
+}
+
+.profile-info{
+  background-color: rgb(4, 242, 242, .8);
+  color: black;
+}
+
+.vehicle-info{
+  background-color: rgb(0, 162, 162, .7);
+  color: black;
+}
+
+.image-container{
+
 }
 
 .journey-or-request{
@@ -68,7 +119,15 @@ body {
 }
 
 .aboutUs{
-  background-color: rgb(17, 97, 113);
+  background-color: rgba(110, 31, 31, 0.762);
   color: white;
   height:200px;
+  text-align: center;
+  box-shadow: -1px 102px 400px 31px rgba(0,0,0,0.51);
+  -webkit-box-shadow: -1px 102px 400px 31px rgba(0,0,0,0.51);
+  -moz-box-shadow: -1px 102px 400px 31px rgba(0,0,0,0.51);
+}
+
+.map-search {
+  color: white;
 }

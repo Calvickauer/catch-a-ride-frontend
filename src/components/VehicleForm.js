@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 
 
 
-const { REACT_APP_SERVER_URL } = process.env
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL
 
 const {REACT_APP_API_KEY} = process.env
 
@@ -18,7 +18,6 @@ const Vehicle = (props) => {
     const [year, setYear] = useState('');
     const [results, setResults] = useState('');
     const [url, setUrl] = useState('');
-    //const [user, setUser] = useState('');
     const [redirect, setRedirect] = useState(false);
 
     const user = props.user.id;
@@ -86,7 +85,7 @@ const Vehicle = (props) => {
     return (
         <div className="row mt-4">
         <div className="col-md-7 offset-md-3">
-            <div className="card card-body">
+            <div className="card card-body vehicle-body">
                 <h2 className="py-2">Add Vehicle</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">

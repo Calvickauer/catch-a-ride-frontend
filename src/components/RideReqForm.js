@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
 import setAuthToken from '../utils/setAuthToken';
-const { REACT_APP_SERVER_URL } = process.env;
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 const RideReqForm = () => {
     const [journey, setJourney] = useState({
@@ -40,11 +40,12 @@ const RideReqForm = () => {
     return (
         <div className="row mt-4 request-size">
             <div className="col-md-7 offset-md-3">
-                <div className="card card-body">
+                <div className="card card-body request-body">
                     <h2 className="py-2">Request a Ride!</h2>
                     <form onSubmit={handleSubmit}>
                         <div className='form-group'>
                             <label htmlFor="date">Departure Date: </label>
+                            <br/>
                             <input type="date" value={journey.date} name='date' onChange={handleChange} />
                         </div>
                         <div className="form-group">

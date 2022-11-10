@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import PlacesAutocomplete, {
   geocodeByAddress,
   getLatLng,
 } from 'react-places-autocomplete';
 import "../App.css";
 import JourneyOrRideForm from './JourneyOrRideReq';
+import JourneyResults from './JourneyResults';
 
 
 
@@ -20,7 +21,7 @@ export class MapContainer extends Component {
       showingInfoWindow: false,
       activeMarker: {},
       selectedPlace: {},
-  
+
       mapCenter: {
         lat: 32.715738,
         lng: -117.1610838
@@ -28,7 +29,7 @@ export class MapContainer extends Component {
     };
   }
 
-  
+
 
   handleChange = origin => {
     this.setState({ origin });
@@ -37,7 +38,7 @@ export class MapContainer extends Component {
   handleChanged = destination => {
     this.setState({ destination });
   };
- 
+
   handleSelect = origin => {
     this.setState({ origin });
     geocodeByAddress(origin)
@@ -50,7 +51,7 @@ export class MapContainer extends Component {
       })
       .catch(error => console.error('Error', error));
   };
-   
+
   handleSelected = destination => {
     this.setState({ destination });
     geocodeByAddress(destination)
@@ -63,7 +64,7 @@ export class MapContainer extends Component {
       })
       .catch(error => console.error('Error', error));
   };
- 
+
   render() {
 
     return (
@@ -152,8 +153,8 @@ export class MapContainer extends Component {
         <div className='map-container'>
 
         <Map className="google-maps"
-          style={{ width: '40%',
-          height: '80%'}}
+          style={{ width: '100%',
+          height: '100%'}}
           google={this.props.google}
           initialCenter={{
             lat: this.state.mapCenter.lat,
@@ -173,10 +174,8 @@ export class MapContainer extends Component {
         <br />
       </div>
         </div>
-
       </div>
-  
-      
+
     )
   }
 }

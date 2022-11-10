@@ -4,7 +4,7 @@ import axios from 'axios';
 import setAuthToken from '../utils/setAuthToken';
 // import DisplayPassengers from './DisplayPassengers';
 // import JourneyDetails from './JourneyDetails';
-const { REACT_APP_SERVER_URL } = process.env;
+const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
 
 const JourneyEdit = () => {
     const [journey, setJourney] = useState({
