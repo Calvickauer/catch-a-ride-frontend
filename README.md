@@ -3,6 +3,94 @@
 Catch-A-Ride is an American online marketplace for carpooling. Our website connects drivers and passengers willing to travel together between cities at an agreed upon price.
 
 
+# Catch A Ride App
+
+Visit Catch A Ride app website at: []
+<hr />
+
+## Getting Started
+
+`1` `Fork` & `Clone` this repo to your local computer.
+
+`2` Install the current dependencies that are listed inside of `package.json`
+```text
+npm install
+```
+<hr />
+
+## Technologies
+
+* React App
+* Deployed to `Heroku`
+* `GraphQL`
+* `MongoDB` 
+
+<hr />
+
+## What it includes
+
+* Settings for `MongoDB`, `Mongoose`
+* Passport and passport-local for authentication
+* Flash messages for errors and successes
+* EJS Templating and EJS Layouts
+
+<hr />
+
+## ERD
+
+![ERD]()
+
+<hr />
+
+## User Stories
+
+* As a user, I want to be able to search for existing travelers headed to the same destination and then request to join their ride depending on their available seats. I would also like to create my own journeys and accept passengers who send requests; depending on how much $ they have to contribute.
+
+<hr />
+
+## Wireframes
+
+* Home page of the app
+
+
+
+* journey form page
+
+
+
+* About page of the app
+
+
+
+<hr />
+
+## Credits
+
+* Third party API: 
+
+
+## Developers 
+
+<div align="center">
+  <a href="https://github.com/Calvickauer">
+      alt="Contributors"
+      width="15%" target="_blank"/>
+    </a>
+    <a href="https://github.com/kearaharrington">
+      alt="Contributors"
+      width="15%" target="_blank"/>
+  </a>
+  </a>
+    <a href="https://github.com/amoreno16003">
+      alt="Contributors"
+      width="15%" target="_blank"/>
+  </a>
+    <a href="https://github.com/Descotto">
+      alt="Contributors"
+      width="15%" target="_blank"/> 
+  </a>
+</div>
+
 # Catch A Ride Frontend
 
 | Components | Links to Code | Description |
