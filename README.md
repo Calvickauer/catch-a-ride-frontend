@@ -135,6 +135,11 @@ npm install
 | `About`| [`About`](https://github.com/romebell/catch-a-ride-frontend/blob/main/docs/other-components.md#about) | A component that decribes the app |
 | `Footer`| [`Footer`](https://github.com/romebell/catch-a-ride-frontend/blob/main/docs/other-components.md#footer) | A footer that goes on each component |
 | `Welcome`| [`Welcome`](https://github.com/romebell/catch-a-ride-frontend/blob/main/docs/other-components.md#welcome) | A welcome page for the user |
+| `Welcome`| [`Welcome`](https://github.com/romebell/catch-a-ride-frontend/blob/main/docs/other-components.md#welcome) | A welcome page for the user |
+| `Welcome`| [`Welcome`](https://github.com/romebell/catch-a-ride-frontend/blob/main/docs/other-components.md#welcome) | A welcome page for the user |
+| `Welcome`| [`Welcome`](https://github.com/romebell/catch-a-ride-frontend/blob/main/docs/other-components.md#welcome) | A welcome page for the user |
+| `Welcome`| [`Welcome`](https://github.com/romebell/catch-a-ride-frontend/blob/main/docs/other-components.md#welcome) | A welcome page for the user |
+| `Welcome`| [`Welcome`](https://github.com/romebell/catch-a-ride-frontend/blob/main/docs/other-components.md#welcome) | A welcome page for the user |
 
 ### `App Component`
 

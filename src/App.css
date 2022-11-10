@@ -102,12 +102,24 @@ body {
 }
 
 .image-container{
+  max-width: 300px;
+  max-height: 500px;
 
 }
 
 .journey-or-request{
   margin: auto;
   max-width: 200px;
+}
+
+.passengers-font{
+  color:rgb(2, 1, 1);
+  background-color: rgb(250, 248, 248, .5);
+}
+
+.journeys-font{
+  color:rgb(2, 1, 1);
+  background-color: rgb(250, 248, 248, .5);
 }
 
 /* .RRforms{

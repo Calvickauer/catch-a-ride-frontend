@@ -46,7 +46,7 @@ const JourneyForm = () => {
                         <div className='form-group'>
                             <label htmlFor="date">Departure Date: </label>
                             <br/>
-                            <input type="date" value={journey.date} name='date' onChange={handleChange} />
+                            <input type="date" value={journey.date} name='date' onChange={handleChange} required/>
                         </div>
                         <div className="form-group">
                             <label htmlFor="origin">Leaving From:</label>
